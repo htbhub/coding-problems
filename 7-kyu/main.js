@@ -114,4 +114,4 @@ function dotCalculator (equation) {
   : equation.includes('//') 
   ? one.repeat(Math.floor(separate[0].length / separate[2].length))
   : ''
-}
+} 
