@@ -157,3 +157,39 @@ function sortMyString(S) {
   }
   return evens.join('') + ' ' + odds.join('')
 }
+
+
+// Count the number of divisors of a positive integer n.
+
+// Random tests go up to n = 500000.
+// Examples (input --> output)
+
+// 4 --> 3 (1, 2, 4)
+// 5 --> 2 (1, 5)
+// 12 --> 6 (1, 2, 3, 4, 6, 12)
+// 30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
+
+function getDivisorsCnt(n) {
+  let result = 0;
+  for (let i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      result++;
+    }
+  }
+  return result;
+}
+
+
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+// Examples:
+
+// Input: 42145 Output: 54421
+
+// Input: 145263 Output: 654321
+
+// Input: 123456789 Output: 987654321
+
+function descendingOrder(n){
+  return Number(String(n).split('').sort((a,b)=> b-a).join(''))
+
+}
