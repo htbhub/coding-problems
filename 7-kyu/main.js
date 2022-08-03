@@ -1,4 +1,4 @@
-// 7 kyu problems 
+// 7 kyu problems from Codewars
 
 // Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.
 
